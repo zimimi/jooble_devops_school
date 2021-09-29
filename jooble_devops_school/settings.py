@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'crud_app',
 ]
 
 MIDDLEWARE = [
@@ -72,6 +73,18 @@ WSGI_APPLICATION = 'jooble_devops_school.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': ‘<db_name>’,
+#         'USER': '<db_username>',
+#         'PASSWORD': '<password>',
+#         'HOST': '<db_hostname_or_ip>',
+#         'PORT': '<db_port>',
+#     }
+# }
+
 
 DATABASES = {
     'default': {

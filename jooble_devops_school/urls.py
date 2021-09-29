@@ -18,7 +18,6 @@ from django.urls import path
 from crud_app import views
 
 urlpatterns = [
-    path('/', views.read),
     path('admin/', admin.site.urls),
     path('create', views.create),
     path('read', views.read),

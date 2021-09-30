@@ -40,9 +40,7 @@ def update(request, id):
 
     if request.method == "POST":
         form = FilmForm(request.POST, instance=film)
-        print("Hello")
         if form.is_valid():
-            print("World")
             form.save()
             return redirect("/read")
 

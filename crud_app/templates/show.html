@@ -12,7 +12,11 @@
     <tr>
         <th>Film ID</th>
         <th>Film Name</th>
-        <th>Film Rating</th>
+        <th>KinoPoisk rating</th>
+        <th>IMDb rating</th>
+        <th>Rotten Tomatoes rating</th>
+        <th>Year</th>
+        <th>Duration</th>
         <th>Actions</th>
     </tr>
     </thead>
@@ -21,7 +25,11 @@
     <tr>
         <td>{{ film.id }}</td>
         <td>{{ film.name }}</td>
-        <td>{{ film.rating }}</td>
+        <td>{{ film.kinopoisk_rating }}</td>
+        <td>{{ film.IMDb_rating }}</td>
+        <td>{{ film.RT_rating }}</td>
+        <td>{{ film.year }}</td>
+        <td>{{ film.duration }}</td>
         <td>
             <a href="/update/{{ film.id }}"><span class="glyphicon glyphicon-pencil" >Edit</span></a>
             <a href="/delete/{{ film.id }}">Delete</a>
